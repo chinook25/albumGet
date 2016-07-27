@@ -1,0 +1,17 @@
+{
+	"numbers":[
+		"01 Oxygene I", 
+		"02 Oxygene II", 
+		"03 Oxygene III", 
+		"04 Oxygene IV",
+		"05 Oxygene V", 		 
+		"06 Oxygene VI"
+	],
+	"album": "Oxygene", 
+        "description": "The album Oxygene, by Jean Michelle Jarre.",
+	"id": "Jean Michelle Jarre - Oxygene",
+	"images": [
+	    	"img/albums/Jean Michel Jarre - Oxygene Front.jpg",
+		"img/albums/Jean Michel Jarre - Oxygene Back.jpg"
+	]
+}

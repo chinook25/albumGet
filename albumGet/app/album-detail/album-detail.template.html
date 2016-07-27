@@ -4,7 +4,7 @@
       ng-repeat="img in $ctrl.album.images" />
 </div>
 
-<h1>{{$ctrl.album.name}}</h1>
+<h1>{{$ctrl.album.album}}</h1>
 
 <p>{{$ctrl.album.description}}</p>
 
@@ -13,105 +13,11 @@
     <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
   </li>
 </ul>
-
-<ul class="specs">
-  <li>
-    <span>Availability and Networks</span>
-    <dl>
-      <dt>Availability</dt>
-      <dd ng-repeat="availability in $ctrl.album.availability">{{availability}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Battery</span>
-    <dl>
-      <dt>Type</dt>
-      <dd>{{$ctrl.album.battery.type}}</dd>
-      <dt>Talk Time</dt>
-      <dd>{{$ctrl.album.battery.talkTime}}</dd>
-      <dt>Standby time (max)</dt>
-      <dd>{{$ctrl.album.battery.standbyTime}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Storage and Memory</span>
-    <dl>
-      <dt>RAM</dt>
-      <dd>{{$ctrl.album.storage.ram}}</dd>
-      <dt>Internal Storage</dt>
-      <dd>{{$ctrl.album.storage.flash}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Connectivity</span>
-    <dl>
-      <dt>Network Support</dt>
-      <dd>{{$ctrl.album.connectivity.cell}}</dd>
-      <dt>WiFi</dt>
-      <dd>{{$ctrl.album.connectivity.wifi}}</dd>
-      <dt>Bluetooth</dt>
-      <dd>{{$ctrl.album.connectivity.bluetooth}}</dd>
-      <dt>Infrared</dt>
-      <dd>{{$ctrl.album.connectivity.infrared | checkmark}}</dd>
-      <dt>GPS</dt>
-      <dd>{{$ctrl.album.connectivity.gps | checkmark}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Android</span>
-    <dl>
-      <dt>OS Version</dt>
-      <dd>{{$ctrl.album.android.os}}</dd>
-      <dt>UI</dt>
-      <dd>{{$ctrl.album.android.ui}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Size and Weight</span>
-    <dl>
-      <dt>Dimensions</dt>
-      <dd ng-repeat="dim in $ctrl.album.sizeAndWeight.dimensions">{{dim}}</dd>
-      <dt>Weight</dt>
-      <dd>{{$ctrl.album.sizeAndWeight.weight}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Display</span>
-    <dl>
-      <dt>Screen size</dt>
-      <dd>{{$ctrl.album.display.screenSize}}</dd>
-      <dt>Screen resolution</dt>
-      <dd>{{$ctrl.album.display.screenResolution}}</dd>
-      <dt>Touch screen</dt>
-      <dd>{{$ctrl.album.display.touchScreen | checkmark}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Hardware</span>
-    <dl>
-      <dt>CPU</dt>
-      <dd>{{$ctrl.album.hardware.cpu}}</dd>
-      <dt>USB</dt>
-      <dd>{{$ctrl.album.hardware.usb}}</dd>
-      <dt>Audio / headphone jack</dt>
-      <dd>{{$ctrl.album.hardware.audioJack}}</dd>
-      <dt>FM Radio</dt>
-      <dd>{{$ctrl.album.hardware.fmRadio | checkmark}}</dd>
-      <dt>Accelerometer</dt>
-      <dd>{{$ctrl.album.hardware.accelerometer | checkmark}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Camera</span>
-    <dl>
-      <dt>Primary</dt>
-      <dd>{{$ctrl.album.camera.primary}}</dd>
-      <dt>Features</dt>
-      <dd>{{$ctrl.album.camera.features.join(', ')}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Additional Features</span>
-    <dd>{{$ctrl.album.additionalFeatures}}</dd>
-  </li>
+<ul class="numbers-list">
+	<li ng-repeat="number in $ctrl.album.numbers">
+		{{number}}
+	</li>
 </ul>
+	
+
+

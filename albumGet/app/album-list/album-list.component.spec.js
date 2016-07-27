@@ -12,7 +12,7 @@ describe('albumList', function() {
     beforeEach(inject(function($componentController, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('albums/albums.json')
-                  .respond([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
+                  .respond([{album: 'And Justice For All'}, {album: 'test'}]);
 
       ctrl = $componentController('albumList');
     }));
@@ -23,7 +23,7 @@ describe('albumList', function() {
       expect(ctrl.albums).toEqual([]);
 
       $httpBackend.flush();
-      expect(ctrl.albums).toEqual([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
+      expect(ctrl.albums).toEqual([{album: 'Nexus S'}, {name: 'Motorola DROID'}]);
     });
 
     it('should set a default value for the `orderProp` property', function() {

@@ -8,7 +8,7 @@ angular.
     controller: ['Album',
       function AlbumListController(Album) {
         this.albums = Album.query();
-        this.orderProp = 'age';
+        this.orderProp = 'artist';
       }
     ]
   });

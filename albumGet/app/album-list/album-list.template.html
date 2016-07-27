@@ -11,8 +11,8 @@
       <p>
         Sort by:
         <select ng-model="$ctrl.orderProp">
-          <option value="name">Alphabetical</option>
-          <option value="age">Newest</option>
+          <option value="artist">Artist Name</option>
+          <option value="album">Album Name</option>
         </select>
       </p>
 
@@ -24,9 +24,9 @@
         <li ng-repeat="album in $ctrl.albums | filter:$ctrl.query | orderBy:$ctrl.orderProp"
             class="thumbnail album-list-item">
           <a href="#!/albums/{{album.id}}" class="thumb">
-            <img ng-src="{{album.imageUrl}}" alt="{{album.name}}" />
+            <img ng-src="{{album.imageUrl}}" alt="{{album.album}}" />
           </a>
-          <a href="#!/albums/{{album.id}}">{{album.name}}</a>
+          <a href="#!/albums/{{album.id}}">{{album.album}}</a>
           <p>{{album.snippet}}</p>
         </li>
       </ul>

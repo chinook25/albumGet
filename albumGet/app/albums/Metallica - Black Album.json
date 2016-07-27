@@ -1,0 +1,14 @@
+{
+	"numbers":[
+		"01 Enter Sandman", 
+		"02 Sad But True",
+		"03 Holier Than Thou"
+	],
+	"album": "Black Album", 
+        "description": "The album Black Album, by Metallica.",
+	"id": "Metallica - Black Album",
+	"images": [
+	    	"img/albums/Metallica - Black Album.jpg",
+		"img/albums/Metallica - Black Album - Back.jpg"
+	]
+}

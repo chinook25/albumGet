@@ -1,0 +1,13 @@
+{
+	"numbers":[
+		"01 Blackened", 
+		"02 ...and Justice For All"
+	],
+	"album": "And Justice For All", 
+        "description": "The album And Justice For All, by Metallica.",
+	"id": "Metallica - And Justice For All",
+	"images": [
+	    	"img/albums/Metallica - And Justice For All.jpg",
+		"img/albums/Metallica - And Justice For All - Back.jpg"
+	]
+}
